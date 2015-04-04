@@ -1,0 +1,44 @@
+body {
+    background-color: #666699;
+}
+
+.body-wrapper {
+    background-color: #ffffff;
+    width: 80%;
+    margin: 0 auto;
+	
+}
+
+/* Puts space underneath the navigation bar */
+.margin-top{
+	margin-top: 50px;
+}
+
+
+
+/* Navigation Bar */
+.navbar-brand{
+	padding: 0;
+	margin-left: 5%;
+}
+
+.navbar-brand img{
+	width: 48px;
+}
+
+
+/* Puts space above the footer */
+.margin-bottom {
+    margin-bottom: 65px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    padding-top: 15px;
+    color: #6b8d9d;
+    background-color: #222222;
+    text-align: center;
+}

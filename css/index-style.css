@@ -1,0 +1,75 @@
+body{
+	background:  url("../images/clouds3.gif") no-repeat center center fixed; 
+  	background-size: cover;
+}
+
+h1{
+    text-align: right;
+    margin: 0;
+}
+
+.navbar-inverse {
+	background-color: rgba(34, 34, 34, 0.3);
+	/*border-color: rgba(8,8,8,0.2);*/
+	border-color: transparent;
+}
+
+.navbar-inverse .navbar-nav>li>a{
+    color: white;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover{
+    color: #A9A9A9;
+}
+
+
+@media(max-width: 768px){
+
+    body{
+        background:  url("../images/clouds0.gif") no-repeat center center fixed; 
+        background-size: cover;
+    }
+
+
+    .navbar-collapse{
+        background-color: #222;
+    }
+}
+
+.page-header{
+	border-bottom: transparent;
+    color: white;
+}
+
+#cont{
+    font-size: 24px;
+}
+
+
+#typed{
+    color: white;
+}
+
+/* blinking cursor */
+.typed-cursor{
+    color: white;
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}

@@ -1,0 +1,40 @@
+.symbolMeaning p{
+    padding-left: 2em;
+}
+
+#A, #B, #C, #D, #E, #F, #H, #K, #M, #N, #P, #R, #S, #T, #V, #W {
+     padding-top: 3em;
+     
+ }
+ 
+ #W{
+     padding-bottom: 3em;
+ }
+ 
+ h4{
+     font-size: 2em;
+ }
+ 
+ .links a:hover{
+     color: black;
+ }
+ 
+ 
+ 
+ .links a:link{
+     text-decoration: none;
+ }
+ 
+ .links{
+     width: 100%;
+     display: block;
+ }
+ 
+ .links a{
+     width:6.2%; 
+     display:block;
+     float:left;
+     text-align: center;
+     color: #666699;
+     font-size: 1.5em;
+ }

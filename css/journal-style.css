@@ -1,0 +1,152 @@
+/*body{
+	background:  url("../images/clouds2.gif") no-repeat center center fixed; 
+  	background-size: cover;
+}
+*/
+.margin-top{
+	height: 20px;
+}
+
+
+.row{
+	width: 100%;
+	margin: 0 auto;
+	/*background-color: green;*/
+}
+
+.col-sm-4{
+
+}
+
+.journal{
+	background-color: rgba(255,160,122, .8);
+	border: 2px solid black;
+	border-bottom-width: 0px;
+	border-bottom-style: none;
+	border-radius: 10px;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	height: 140px;
+	margin: 10px 0;
+	margin-bottom: 0px;
+    overflow: auto;
+}
+.like-dream{
+	background-color: rgba(127, 255, 212, .8);
+	color: white;
+	border: 2px solid black;
+	border-top-width: 0px;
+	border-top-style: none;
+	border-radius: 10px;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+	padding-top: 3px;
+}
+
+.like-dream-heart{
+	display: inline-block;
+	color: white;
+	padding-left: 5px;
+}
+
+.like-dream-thumbs-up{
+	display: inline-block;
+	color: white;
+	float: right;
+}
+
+.dream-name{
+	border-bottom: 4px solid black;
+	text-align: center;
+	margin-top: 0px;
+	/*background:  url("../images/clouds3.gif") ; */
+	color: white; 
+}
+
+.glyphicon-heart{
+	color: white;
+	font-size: 1.5em;
+	/*margin-right: 10px;*/
+}
+
+.glyphicon-heart:hover{
+	color: green;
+	font-size: 1.5em;
+}
+
+.likes{
+	font-size: 1.2em;
+	position: relative;
+	bottom: 2px;
+	left: 10px;
+}
+
+.glyphicon-thumbs-up{
+	color: white;
+	font-size: 1.5em;
+	margin-right: 10px;
+}
+
+.glyphicon-thumbs-up:hover{
+	color: blue;
+	font-size: 1.5em;
+	margin-right: 10px;
+}
+
+.glyphicon-option-vertical{
+	font-size: 1.5em;
+}
+
+.glyphicon-cloud{
+	top: 5px;
+	font-size: 1.5em;
+	color: white;
+}
+
+.refresh{
+	/*background-color: red;*/
+	margin: 20px 0;
+	text-align: center;
+}
+
+.glyphicon-refresh{
+	font-size: 4em;
+	color: white;
+}
+
+.glyphicon-refresh:hover{
+	color: rgb(250,128,114);
+	-webkit-animation: cycle 2s infinite linear;
+	animation: cycle 2s infinite linear;
+
+}
+
+@-webkit-keyframes cycle {
+	    from {
+	        -ms-transform: rotate(0deg);
+	        -webkit-transform: rotate(0deg);
+	        transform: rotate(0deg);
+	    }
+	    to {
+	        -ms-transform: rotate(360deg);
+	        -webkit-transform: rotate(360deg);
+	        transform: rotate(360deg);
+	    }
+	}
+
+	@keyframes cycle {
+	    from {
+	        -ms-transform: rotate(0deg);
+	        -webkit-transform: rotate(0deg);
+	        transform: rotate(0deg);
+	    }
+	    to {
+	        -ms-transform: rotate(360deg);
+	        -webkit-transform: rotate(360deg);
+	        transform: rotate(360deg);
+	    }
+	}
+
+.dream-content{
+	margin: 0 10px;
+}

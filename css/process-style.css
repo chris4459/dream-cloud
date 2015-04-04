@@ -1,0 +1,22 @@
+body{
+	/*background:  url("../images/clouds.gif") no-repeat center center fixed; */
+  	/*background-size: cover;*/
+}
+
+.margin-top{
+	margin-top: 200px;
+}
+
+.btn-group{
+	display: block;
+}
+
+.beige-background{
+	background-color: #f5f5dc;
+	padding: 5px;
+}
+
+.snow-background{
+	background-color: #eee9e9;
+	padding: 5px;
+}

@@ -1,0 +1,63 @@
+.body-wrapper{
+	background-color: inherit;
+	width: 95%;
+}
+
+.inline-form{
+	display: inline-block;
+	width: 48%;
+	border: 3px solid black;
+	border-radius: 40px;
+	height: 400px;
+	margin-top: 50px;
+	margin-left: 1%;
+	background-color: white;
+}
+
+.form-horizontal{
+	margin-top: 40px;
+	/*padding: 2%;*/
+}
+
+@media(min-width: 768px){
+
+	.form-horizontal{
+		padding: 3%;
+	}
+
+	.form-group{
+		padding-top: 1%;
+		padding-bottom: 1%;
+	}
+	
+	.dream-form{
+		margin-top: 50px;
+	}
+}
+
+textarea{
+	width: 95%;
+}
+
+
+@media(max-width: 768px){
+
+	.body-wrapper{
+		margin-top: 100px;
+		padding: 1%;
+	}
+
+	.inline-form{
+		margin-top: 10px;
+		display: block;
+		width: 95%;
+		margin-left: 2%;
+		height: 330px;
+		padding: 2%;
+	}
+
+	.form-horizontal{
+		margin-top: 20px;
+		padding-left: 1%;
+	}
+}
