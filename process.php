@@ -36,16 +36,19 @@ else {
 	$new_dream->set("dream_id", rand(1,10));
 
 	try {
-	  $new_dream->save();	
-	  echo 'New dream created with objectId: ' . $new_dream->getObjectId() . "<br>";
+          $new_dream->save();
+          echo "<div class=\"panel\" id=\"thankyoubox\">";
+          echo "<div class=\"panel-body\">Thank you $name for submitting your dream.</div>";
+          echo "<div class=\"panel-body\">A copy of your dream has been emailed to you at {$email}. Check your spam.</div><br>";
+          echo "<div class=\"panel-body\">You can view your dream, along with many other dreams, on the journal page.</div>";
+          // echo 'New dream created with objectId: ' . $new_dream->getObjectId() . "<br>";
 	} 
 	catch (ParseException $pe) {
+                echo "Dream failed to submit. Please go back and try again.<br>";
 		echo $pe->getMessage() . "<br>";
 	}
 
 	$headers = "From: $name<$email>\r\n";
-	$msg = "Testing";
-
 }
 ?>
 <!DOCTYPE html>
@@ -53,50 +56,18 @@ else {
 <head>
 	<meta charset="UTF-8">
 	<title>Thank you</title>
+        <link rel="stylesheet" href="css/default.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css" media="screen">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/process-style.css">
 </head>
 <body>
-
 	<?php 
 		$filename = "SaveInfo.txt";
 		$email_msg = "Thank you $name for submitting your dream.\n\n";
 
-    	// $isItExisting = (file_exists($filename));
-
  		$handle = fopen($filename, 'w');
 		use Parse\ParseQuery;
-
-
-		// $keywords = explode(" ", $dream);
-		// foreach ($keywords as $word) {
-		// 	$query = new ParseQuery("Keywords");
-		// 	$query->equalTo("symbol", "$word");
-		// 	$results = $query->find();
-		// 	echo "Successfully retrieved " . count($results) . " symbol.";
-
-
-		// 	$msg = "$word means: ";
-		// 	$email_msg .= "$word means: \n";
-		// 	echo "<p>$msg</p>";
-
-		// 	$msg .= "\n";
-		// 	fwrite($handle, $msg);
-
-
-		// 	for ($i = 0; $i < count($results); $i++) { 
-		// 		  $object = $results[$i];
-		// 		  $msg = $object->get('meaning');
-		// 		  echo $msg;
-
-
-		// 		  $msg .= "\n";
-		// 		  fwrite($handle, $msg);
-		// 		  $email_msg .= $msg;
-
-		// 	}
-		// 	echo "</p>";
-		// 	$email .= "\n";
-		// }
-
 
 		$msg = "Thanks for sharing your dream: \n";
 		$msg .= $dream;
@@ -104,13 +75,11 @@ else {
 
 
 		fclose($handle);
-		echo "<p>Saved dream to $filename</p>";
-
+                echo "<div class=\"panel-body\">Saved dream to $filename</div>";
+                echo "<a href=\"index.php\"><img src=\"images/cloud-icon-72.png\" alt=\"Cloud Icon\"></a>";
+                echo "</div>";
 
 		mail($email, 'Your Dream', $email_msg, $headers);
-		echo "<p>Sent email to $email</p>";
 	 ?>
-
-	Thanks man. We sent you an email with your dream
 </body>
 </html>

@@ -1,22 +1,15 @@
-body{
-	/*background:  url("../images/clouds.gif") no-repeat center center fixed; */
-  	/*background-size: cover;*/
+.panel {
+        text-align: center;
+        margin: 0 auto;
+        padding: 0.5em;
+        width: 50%;
 }
 
-.margin-top{
-	margin-top: 200px;
+#thankyoubox {
+        position: relative;
+        top: 30%;
 }
 
-.btn-group{
-	display: block;
-}
-
-.beige-background{
-	background-color: #f5f5dc;
-	padding: 5px;
-}
-
-.snow-background{
-	background-color: #eee9e9;
-	padding: 5px;
+img {
+        margin: 0 auto;
 }
