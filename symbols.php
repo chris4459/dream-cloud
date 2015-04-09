@@ -16,36 +16,101 @@
   $fName = basename(__FILE__);
 ?>
 
-<body>
-	<?php
+<body data-spy="scroll" data-target="#navbar-example">	
+
+    <?php
 	    include("nav.php");
 	?>
 	<div class="margin-top"></div>
-	<div class="body-wrapper">
-    	<h2>Common Symbols</h2>
-    	<h3>
-    		The following symbols are commonly used in dream interpretation.
-    	</h3>
-    	
-    	<div class="links">
-    	<a href="#A">A</a>
-    	<a href="#B">B</a>
-    	<a href="#C">C</a>
-    	<a href="#D">D</a>
-    	<a href="#E">E</a>
-    	<a href="#F">F</a>
-    	<a href="#H">H</a>
-    	<a href="#K">K</a>
-    	<a href="#M">M</a>
-    	<a href="#N">N</a>
-    	<a href="#P">P</a>
-    	<a href="#R">R</a>
-    	<a href="#S">S</a>
-    	<a href="#T">T</a>
-    	<a href="#V">V</a>
-    	<a href="#W">W</a>
-    	</div>
-    	
+        
+    
+  
+  <!-- <div class="bs-example" data-example-id="embedded-scrollspy"> -->
+    <!-- <nav id="navbar-example2" class="navbar navbar-default navbar-static">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-example-js-navbar-scrollspy">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse bs-example-js-navbar-scrollspy">
+          <ul class="nav navbar-nav" role="tablist">
+
+<div class="links"> 
+            <li><a href="#A">A</a></li>
+        <li><a href="#B">B</a></li>
+        <li><a href="#C">C</a></li>
+        <li><a href="#D">D</a></li>
+        <li><a href="#E">E</a></li>
+        <li><a href="#F">F</a></li>
+        <li><a href="#H">H</a></li>
+        <li><a href="#K">K</a></li>
+        <li><a href="#M">M</a></li>
+        <li><a href="#N">N</a></li>
+        <li><a href="#P">P</a></li>
+        <li><a href="#R">R</a></li>
+        <li><a href="#S">S</a></li>
+        <li><a href="#T">T</a></li>
+        <li><a href="#V">V</a></li>
+        <li><a href="#W">W</a></li>
+            </div> 
+          </ul>
+        </div>
+      </div>
+    </nav> -->
+
+<div id = "top">
+        <h2>Common Symbols</h2>
+        <h3>
+            The following symbols are commonly used in dream interpretation.
+        </h3>
+    
+    <div id="navbar">
+  <ul class="nav">
+    <div class="links"> 
+    <li><a href="#A">A</a></li>
+        <li><a href="#B">B</a></li>
+        <li><a href="#C">C</a></li>
+        <li><a href="#D">D</a></li>
+        <li><a href="#E">E</a></li>
+        <li><a href="#F">F</a></li>
+        <li><a href="#H">H</a></li>
+        <li><a href="#K">K</a></li>
+        <li><a href="#M">M</a></li>
+        <li><a href="#N">N</a></li>
+        <li><a href="#P">P</a></li>
+        <li><a href="#R">R</a></li>
+        <li><a href="#S">S</a></li>
+        <li><a href="#T">T</a></li>
+        <li><a href="#V">V</a></li>
+        <li><a href="#W">W</a></li>
+    </div>
+  </ul>
+</div>
+</div>
+
+    <div class="body-wrapper">
+    <!-- <div data-spy="scroll" data-target="#navbar-example2" data-offset="0" class="scrollspy-example">
+      <h4 id="fat">@fat</h4>
+      <p>Ad leggings keytar, brunch id art party dolor labore. Pitchfork yr enim lo-fi before they sold out qui. Tumblr farm-to-table bicycle rights whatever. Anim keffiyeh carles cardigan. Velit seitan mcsweeney's photo booth 3 wolf moon irure. Cosby sweater lomo jean shorts, williamsburg hoodie minim qui you probably haven't heard of them et cardigan trust fund culpa biodiesel wes anderson aesthetic. Nihil tattooed accusamus, cred irony biodiesel keffiyeh artisan ullamco consequat.</p>
+      <h4 id="mdo">@mdo</h4>
+      <p>Veniam marfa mustache skateboard, adipisicing fugiat velit pitchfork beard. Freegan beard aliqua cupidatat mcsweeney's vero. Cupidatat four loko nisi, ea helvetica nulla carles. Tattooed cosby sweater food truck, mcsweeney's quis non freegan vinyl. Lo-fi wes anderson +1 sartorial. Carles non aesthetic exercitation quis gentrify. Brooklyn adipisicing craft beer vice keytar deserunt.</p>
+      <h4 id="one">one</h4>
+      <p>Occaecat commodo aliqua delectus. Fap craft beer deserunt skateboard ea. Lomo bicycle rights adipisicing banh mi, velit ea sunt next level locavore single-origin coffee in magna veniam. High life id vinyl, echo park consequat quis aliquip banh mi pitchfork. Vero VHS est adipisicing. Consectetur nisi DIY minim messenger bag. Cred ex in, sustainable delectus consectetur fanny pack iphone.</p>
+      <h4 id="two">two</h4>
+      <p>In incididunt echo park, officia deserunt mcsweeney's proident master cleanse thundercats sapiente veniam. Excepteur VHS elit, proident shoreditch +1 biodiesel laborum craft beer. Single-origin coffee wayfarers irure four loko, cupidatat terry richardson master cleanse. Assumenda you probably haven't heard of them art party fanny pack, tattooed nulla cardigan tempor ad. Proident wolf nesciunt sartorial keffiyeh eu banh mi sustainable. Elit wolf voluptate, lo-fi ea portland before they sold out four loko. Locavore enim nostrud mlkshk brooklyn nesciunt.</p>
+      <h4 id="three">three</h4>
+      <p>Ad leggings keytar, brunch id art party dolor labore. Pitchfork yr enim lo-fi before they sold out qui. Tumblr farm-to-table bicycle rights whatever. Anim keffiyeh carles cardigan. Velit seitan mcsweeney's photo booth 3 wolf moon irure. Cosby sweater lomo jean shorts, williamsburg hoodie minim qui you probably haven't heard of them et cardigan trust fund culpa biodiesel wes anderson aesthetic. Nihil tattooed accusamus, cred irony biodiesel keffiyeh artisan ullamco consequat.</p>
+      <p>Keytar twee blog, culpa messenger bag marfa whatever delectus food truck. Sapiente synth id assumenda. Locavore sed helvetica cliche irony, thundercats you probably haven't heard of them consequat hoodie gluten-free lo-fi fap aliquip. Labore elit placeat before they sold out, terry richardson proident brunch nesciunt quis cosby sweater pariatur keffiyeh ut helvetica artisan. Cardigan craft beer seitan readymade velit. VHS chambray laboris tempor veniam. Anim mollit minim commodo ullamco thundercats.
+      </p>
+    </div> -->
+  <!-- </div>/example -->
+
+  
+    <div id="content" data-spy="scroll" data-target="#navbar" data-offset="150" class="scrollspy-example">
     
     	<div id = "A">
     		<h4>A</h4>
@@ -225,8 +290,11 @@
 			</p> </div>
     		
     	</div>
+        <div id="credit">
     	-<a href="http://www.world-of-lucid-dreaming.com/30-common-dream-symbols.html">World of Lucid Dreaming</a>
-	</div>
+	       </div>
+    </div>
+</div>
 	<?php
 		include("footer.php");
 	?>
