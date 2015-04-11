@@ -1,4 +1,5 @@
-function validate_form2(){
+function validate_form(){
+
 	if( document.dreamform.age.value == "" ){
 		alert( "Please provide your age!" );
 		document.dreamform.age.focus() ;
