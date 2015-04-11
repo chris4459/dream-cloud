@@ -1,40 +1,28 @@
-function validate_form(){
-	if( document.dreamform.age.value == "" ){
-		alert( "Please provide your age!" );
-		document.dreamform.age.focus() ;
-		return false;
-	}
-
-	if( isNaN(document.dreamform.age.value)  ){
-		alert( "Age has to be a number!" );
-		document.dreamform.age.focus() ;
-		return false;
-	}
-
-	if( document.dreamform.email.value == "" ){
-		alert( "Please provide your Email!" );
-		document.dreamform.email.focus() ;
-		return false;
-	}
-
+function validate_form() {
+	var age = document.getElementById("age").value;
+	var gender = document.getElementById("gender").value;	
 	var email = document.getElementById("email").value;
-
+	var dream = document.getElementById("dream").value;
+	var inputs = [ age, gender, email, dream ];
+	var missing_a_field = false;
+	inputs.forEach(function(input) {
+		if (input === "") {
+			missing_a_field = true;
+		}
+	});
+	if (missing_a_field) {
+		alert("Please fill out all fields!");
+		return false;
+	}
 	if (email.indexOf("@") == -1 || email.indexOf(".") == -1) {
 		alert("Email format is wrong");
 		return false;
 	}
-
-	var genders = document.getElementsByName("gender");
-	if (!genders[0].checked && !genders[1].checked) {
-		alert( "Please provide your gender!" );
-		return false;
-	};
-
-	if( document.dreamform.dream.value == "" ){
-		alert( "Please share your dream!" );
-		document.dreamform.dream.focus() ;
+	
+	if(isNaN(age)){
+		alert("Please enter a number for age");
 		return false;
 	}
-
+	return true;
 
 }
