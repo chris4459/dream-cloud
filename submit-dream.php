@@ -21,7 +21,7 @@
 	?>
 	<div class="margin-top"></div>
 	<!-- <div class=""> -->
-		<form class="form-horizontal" action="process.php" onsubmit="return validate_form();" method="POST">
+		<form name="dreamform" class="form-horizontal" action="process.php" onsubmit="return validate_form();" method="POST">
 			<div class="form-group orange-row">
 				<label for="name" class="col-sm-2 control-label">Name</label>
 				<div class="col-sm-10">
@@ -32,23 +32,22 @@
 				<label for="age" class="col-sm-2 control-label">Age</label>
 				<div class="col-sm-10">
 					<input type="text" class="form-control" id="age" placeholder="Age" name="age">
+					<span class="glyphicon glyphicon-asterisk"></span>
 				</div>
 			</div>
 			<div class="form-group orange-row">
-				<label for="gender" class="col-sm-2 control-label">Gender</label>
+				<label class="col-sm-2 control-label">Gender</label>
 				<div class="col-sm-10">
-					<label class="radio-inline">
-				      <input type="radio" name="gender" id="gender" name="gender" value="male">Male
-				    </label>
-				    <label class="radio-inline">
-				      <input type="radio" name="gender" id="gender" name="gender" value="female">Female
-				    </label>
+				      <input type="radio" name="gender" id="gender-male"  value="male">Male
+				      <input type="radio" name="gender" id="gender-female"  value="female">Female
+				      <span class="glyphicon glyphicon-asterisk" id="gender-asterick"></span>
 				</div>
 			</div>
 			<div class="form-group brown-row">
 				<label for="email" class="col-sm-2 control-label">Email</label>
 				<div class="col-sm-10">
 			  		<input type="email" class="form-control" id="email" placeholder="Email" name="email">
+			  		<span class="glyphicon glyphicon-asterisk"></span>
 				</div>
 			</div>
 			<div class="form-group orange-row">
@@ -58,6 +57,7 @@
 				</label>
 				<div class="col-sm-10">
 			  		<textarea name="dream" id="dream" rows="10" placeholder="Explain your dream"></textarea>
+			  		<span class="glyphicon glyphicon-asterisk" id="dream-asterisk"></span>
 				</div>
 				<div class="col-sm-offset-2 col-sm-10 submit-button">
 			  		<button type="submit" class="btn btn-default">Submit</button>

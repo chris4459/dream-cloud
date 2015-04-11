@@ -26,10 +26,14 @@ body {
 	width: 48px;
 }
 
+.navbar-collapse{
+    text-align: center;
+}
+
 
 /* Puts space above the footer */
 .margin-bottom {
-    margin-bottom: 65px;
+    margin-bottom: 50px;
 }
 
 footer {

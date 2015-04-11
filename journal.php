@@ -17,6 +17,7 @@ $dream_objectID_arr = array();
 	<link rel="stylesheet" href="css/bootstrap.min.css" media="screen">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/journal-style.css">
+  <link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   <script type="text/javascript" src="http://www.parsecdn.com/js/parse-1.4.0.min.js"></script>
   <script src="js/bootstrap.js"></script>
@@ -92,7 +93,7 @@ $dream_objectID_arr = array();
 </div>
 
     <div class="refresh">
-      <a href="journal.php"><span class="glyphicon glyphicon-refresh"></span></a>
+      <span class="glyphicon glyphicon-refresh" onClick="window.location.reload()"></span>
     </div>
 
 

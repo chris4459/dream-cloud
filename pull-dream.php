@@ -19,9 +19,9 @@ while ($not_found) {
 
     	if (!in_array($object->getObjectId(), $dream_objectID_arr)) {
     		array_push($dream_objectID_arr, $object->getObjectId());
-    		echo '<a href="view.php?id='.$object->getObjectId().'"><h4 class="dream-name">'.$object->get('name').'&nbsp;&nbsp;</a>';
+    		echo '<h4 class="dream-name"><a href="view.php?id='.$object->getObjectId().'">'.$object->get('name').'&nbsp;&nbsp;';
             echo '<span class="glyphicon glyphicon-cloud" aria-hidden="true"></span>';
-            echo '</h4>';
+            echo '</h4></a>';
     		echo '<blockquote class="blockquote-reverse"><p class="dream-content">'.$object->get('dream').'</p>';
             echo '<footer><cite title="Dreamer">'.$object->get('name').'</cite></footer>';
             echo '</blockquote>';

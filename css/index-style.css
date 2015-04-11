@@ -3,10 +3,7 @@ body{
   	background-size: cover;
 }
 
-h1{
-    text-align: right;
-    margin: 0;
-}
+
 
 .navbar-inverse {
 	background-color: rgba(34, 34, 34, 0.3);
@@ -45,15 +42,30 @@ h1{
     font-size: 24px;
 }
 
+#caption{
+    float: right;
+    font-size: 3em;
+    font-family: 'Chewy', cursive;
+}
+
+.type-wrap{
+    text-align: right;
+}
 
 #typed{
     color: white;
+    font-size: 2.8em;
+    /*float: right;*/
+    font-family: 'Chewy', cursive;
 }
 
 /* blinking cursor */
 .typed-cursor{
     color: white;
     opacity: 1;
+    font-size: 2.8em;
+    /*float: right;*/
+    font-family: 'Chewy', cursive;
     -webkit-animation: blink 0.7s infinite;
     -moz-animation: blink 0.7s infinite;
     animation: blink 0.7s infinite;

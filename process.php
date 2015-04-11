@@ -3,11 +3,8 @@
 require 'vendor/autoload.php';
 use Parse\ParseClient; 
 ParseClient::initialize('iO1uklYpUX5pR8WxX8nisrwA7wTOs7OL0SawDaDh', 'FfSUpIpOqNspjzvlemFxLsLzzxll853U2aMcQJk0', 'cSaozrm7v5JYpLvG9E0ij3OXqCMn7judZtaJ02NS');
-
 use Parse\ParseObject;
-
 date_default_timezone_set('America/New_York');
-
 $required_fields = array('age', 'gender', 'email', 'dream');
 $missing_a_field = false;
 foreach ($required_fields as $field) {
@@ -15,7 +12,6 @@ foreach ($required_fields as $field) {
 		$missing_a_field = true;
 	}
 }
-
 if ($missing_a_field) {
 	echo "All fields are required!<br>";
 }
@@ -32,85 +28,50 @@ else {
 	$new_dream->set("email", $email);
 	$new_dream->set("dream", $dream);
 	$new_dream->set("likes", 0);
-
 	$new_dream->set("dream_id", rand(1,10));
-
 	try {
-	  $new_dream->save();	
-	  echo 'New dream created with objectId: ' . $new_dream->getObjectId() . "<br>";
+          $new_dream->save();
+          echo "<div class=\"panel\" id=\"thankyoubox\">";
+          echo "<div class=\"panel-body\">Thank you $name for submitting your dream.</div>";
+          echo "<div class=\"panel-body\">A copy of your dream has been emailed to you at {$email}. Check your spam.</div><br>";
+          echo "<div class=\"panel-body\">You can view your dream, along with many other dreams, on the journal page.</div>";
+          // echo 'New dream created with objectId: ' . $new_dream->getObjectId() . "<br>";
 	} 
 	catch (ParseException $pe) {
+                echo "Dream failed to submit. Please go back and try again.<br>";
 		echo $pe->getMessage() . "<br>";
 	}
-
 	$headers = "From: $name<$email>\r\n";
-	$msg = "Testing";
-
 }
 ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Thank you</title>
+        <link rel="stylesheet" href="css/default.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css" media="screen">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/process-style.css">
 </head>
 <body>
-
 	<?php 
 		$filename = "SaveInfo.txt";
 		$email_msg = "Thank you $name for submitting your dream.\n\n";
-
-    	// $isItExisting = (file_exists($filename));
-
+		$email_msg .= "Your dream:\n";
+		$email_msg .= $dream;
  		$handle = fopen($filename, 'w');
 		use Parse\ParseQuery;
-
-
-		// $keywords = explode(" ", $dream);
-		// foreach ($keywords as $word) {
-		// 	$query = new ParseQuery("Keywords");
-		// 	$query->equalTo("symbol", "$word");
-		// 	$results = $query->find();
-		// 	echo "Successfully retrieved " . count($results) . " symbol.";
-
-
-		// 	$msg = "$word means: ";
-		// 	$email_msg .= "$word means: \n";
-		// 	echo "<p>$msg</p>";
-
-		// 	$msg .= "\n";
-		// 	fwrite($handle, $msg);
-
-
-		// 	for ($i = 0; $i < count($results); $i++) { 
-		// 		  $object = $results[$i];
-		// 		  $msg = $object->get('meaning');
-		// 		  echo $msg;
-
-
-		// 		  $msg .= "\n";
-		// 		  fwrite($handle, $msg);
-		// 		  $email_msg .= $msg;
-
-		// 	}
-		// 	echo "</p>";
-		// 	$email .= "\n";
-		// }
-
-
-		$msg = "Thanks for sharing your dream: \n";
+		$msg = "Thanks for sharing your dream: $name \n\n";
+		$msg .= "Your dream: \n";
 		$msg .= $dream;
 		fwrite($handle, $msg);
-
-
 		fclose($handle);
-		echo "<p>Saved dream to $filename</p>";
-
-
+                echo "<div class=\"panel-body\">Saved dream to $filename</div>";
+                echo "<a href=\"index.php\"><img src=\"images/cloud-icon-72.png\" alt=\"Cloud Icon\"></a>";
+                echo "</div>";
 		mail($email, 'Your Dream', $email_msg, $headers);
-		echo "<p>Sent email to $email</p>";
 	 ?>
-
-	Thanks man. We sent you an email with your dream
 </body>
 </html>

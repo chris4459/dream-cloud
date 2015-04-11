@@ -1,0 +1,13 @@
+.body-wrapper{
+	padding: 15px;
+}
+
+.lucid img{
+	width: 100%;
+}
+
+@media(max-width: 768px){
+	.body-wrapper{
+		width: 90%;	
+	}
+}

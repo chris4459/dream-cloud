@@ -50,8 +50,8 @@ function increment_likes(id, object_id){
 	else{
 		dream_id.innerHTML = likes - 1;
 		dream_liked[id] = false;
-		document.getElementById("heart_"+id).style.color = 'white';
-		document.getElementById("thumbs_"+id).style.color = 'white';
+		document.getElementById("heart_"+id).removeAttribute("style");
+		document.getElementById("thumbs_"+id).removeAttribute("style");
 
 		query.find({
 		  success: function(results) {

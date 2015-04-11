@@ -11,11 +11,11 @@
 .row{
 	width: 100%;
 	margin: 0 auto;
-	/*background-color: green;*/
 }
 
 .col-sm-4{
-
+	padding-left: 7px;
+	padding-right: 7px;
 }
 
 .journal{
@@ -58,20 +58,31 @@
 .dream-name{
 	border-bottom: 4px solid black;
 	text-align: center;
-	margin-top: 0px;
+	margin-top: -5px;
 	/*background:  url("../images/clouds3.gif") ; */
 	color: white; 
+
+	font-family: 'Indie Flower', cursive;
+
+	font-size: 1.8em;
+	/*font-weight: bold;*/
+}
+
+.dream-name a{
+	color: white;
+	text-decoration: none;
+}
+
+.dream-name a:hover{
+	color: rgb(51,122,183);
+	cursor: hand;
+	cursor: pointer;
 }
 
 .glyphicon-heart{
 	color: white;
 	font-size: 1.5em;
 	/*margin-right: 10px;*/
-}
-
-.glyphicon-heart:hover{
-	color: green;
-	font-size: 1.5em;
 }
 
 .likes{
@@ -88,17 +99,20 @@
 }
 
 .glyphicon-thumbs-up:hover{
-	color: blue;
+	color: rgb(40,97,146);
 	font-size: 1.5em;
 	margin-right: 10px;
+	cursor: hand;
+	cursor: pointer;
 }
+
 
 .glyphicon-option-vertical{
 	font-size: 1.5em;
 }
 
 .glyphicon-cloud{
-	top: 5px;
+	top: 10px;
 	font-size: 1.5em;
 	color: white;
 }
@@ -112,10 +126,13 @@
 .glyphicon-refresh{
 	font-size: 4em;
 	color: white;
+	margin-bottom: 15px;
 }
 
 .glyphicon-refresh:hover{
 	color: rgb(250,128,114);
+	cursor: hand;
+	cursor: pointer;
 	-webkit-animation: cycle 2s infinite linear;
 	animation: cycle 2s infinite linear;
 

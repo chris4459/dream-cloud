@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css" media="screen">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/index-style.css">
+	<link href='http://fonts.googleapis.com/css?family=Chewy' rel='stylesheet' type='text/css'>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 	<script src="js/bootstrap.js"></script>
 	<script src="js/typing.js"></script>
@@ -24,29 +25,18 @@
 	<?php
 	    include("nav.php");
 	?>
-<!-- 	<audio  autoplay loop>
-		  <source src="sound/Rain_Background.mp3" type="audio/mpeg" >
-	</audio>
- -->	
- 	<div class="margin-top"></div>
 
-	<!-- <div class="element white-font"></div> -->
+ 	<div class="margin-top"></div>
 	<div class="container">
 	<div class="page-header">
-		<h1>
-			<span id="caption"></span>
-			<!-- <span id="cursor">|</span> -->
-		</h1>
+		<span id="caption"></span>
 	</div>
 	</div>
 
 
 	<div class="type-wrap container">
-		<h1>
-            <span id="typed"></span>
-        </h1>
-     </div>
-
+        <span id="typed"></span>
+    </div>
 
 
 <?php include 'footer.php'; ?>
