@@ -21,7 +21,7 @@
 	?>
 	<div class="margin-top"></div>
 	<!-- <div class=""> -->
-		<form name="dreamform" class="form-horizontal" action="process.php" onsubmit="return validate_form2();" method="POST">
+		<form name="dreamform" class="form-horizontal" action="process.php" onsubmit="return validate_form();" method="POST">
 			<div class="form-group orange-row">
 				<label for="name" class="col-sm-2 control-label">Name</label>
 				<div class="col-sm-10">
@@ -67,7 +67,6 @@
 
 
 		<script src="js/validate_form.js"></script>
-		<script src="js/validate_form2.js"></script>
 	<!-- </div> -->
 
 	<?php
