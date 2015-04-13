@@ -30,6 +30,11 @@ body {
     text-align: center;
 }
 
+.nav li a{
+    font-size: 1.5em;
+    font-family: 'Indie Flower', cursive;
+}
+
 
 /* Puts space above the footer */
 .margin-bottom {
