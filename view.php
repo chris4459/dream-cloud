@@ -81,29 +81,7 @@ if (count($results)) {
 	<div id="back">
 		<span class="glyphicon glyphicon-backward" onclick="goBack()"></span>
 	</div>
-<!--  		<table class="table table-striped">
- 			<tr>
- 				<td class="left">Name:</td>
- 				<td class="right"><?php echo $name; ?></td>
- 			</tr>
- 			<tr>
- 				<td class="left">Age:</td>
- 				<td class="right"><?php echo $age; ?></td>
- 			</tr>
- 			<tr>
- 				<td class="left">Gender:</td>
- 				<td class="right"><?php echo $gender; ?></td>
- 			</tr>
- 			<tr>
- 				<td class="left">Dream:</td>
- 				<td class="right"><?php echo $dream; ?></td>
- 			</tr>
- 			<tr>
- 				<td class="left">Likes:</td>
- 				<td class="right"><?php echo $likes; ?></td>
- 			</tr>
- 		</table> -->
- 	<!-- </div> -->
+	
 	<?php
 		include("footer.php");
 	?>
