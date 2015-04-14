@@ -30,6 +30,8 @@
 
 .control-label{
     color: rgb(241,150,51);
+	font-family: 'Indie Flower', cursive;
+	font-size: 1.2em;
 }
 
 input[type=radio]{
