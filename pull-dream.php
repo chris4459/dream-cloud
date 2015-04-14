@@ -21,7 +21,7 @@ while ($not_found) {
     		array_push($dream_objectID_arr, $object->getObjectId());
     		echo '<h4 class="dream-name"><a href="view.php?id='.$object->getObjectId().'">'.$object->get('name').'&nbsp;&nbsp;';
             echo '<span class="glyphicon glyphicon-cloud" aria-hidden="true"></span>';
-            echo '</h4></a>';
+            echo '</a></h4>';
     		echo '<blockquote class="blockquote-reverse"><p class="dream-content">'.$object->get('dream').'</p>';
             echo '<footer><cite title="Dreamer">'.$object->get('name').'</cite></footer>';
             echo '</blockquote>';

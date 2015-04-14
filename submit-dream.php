@@ -39,8 +39,12 @@
 			<div class="form-group orange-row">
 				<label class="col-sm-2 control-label">Gender</label>
 				<div class="col-sm-10">
-				      <input type="radio" name="gender" id="gender-male"  value="male">Male
-				      <input type="radio" name="gender" id="gender-female"  value="female">Female
+					<label for="gender-male" class="col-sm-2 control-label gender-label">Male
+						<input type="radio" name="gender" id="gender-male"  value="male">
+					</label>
+					<label for="gender-female" class="col-sm-2 control-label gender-label">Female
+				      	<input type="radio" name="gender" id="gender-female"  value="female">
+				      </label>
 				      <span class="glyphicon glyphicon-asterisk" id="gender-asterick"></span>
 				</div>
 			</div>

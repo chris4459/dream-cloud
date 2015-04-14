@@ -31,8 +31,8 @@
 </div>
 
 <div id="navbar">
+    <div class="links"> 
         <ul class="nav">
-            <div class="links"> 
                 <li><a href="#A">A</a></li>
                 <li><a href="#B">B</a></li>
                 <li><a href="#C">C</a></li>
@@ -49,9 +49,9 @@
                 <li><a href="#T">T</a></li>
                 <li><a href="#V">V</a></li>
                 <li><a href="#W">W</a></li>
-            </div>
         </ul>
     </div>
+</div>
 
 <div class="body-wrapper">
 
