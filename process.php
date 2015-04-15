@@ -21,7 +21,7 @@ foreach ($required_fields as $field) {
 if ($missing_a_field) {
 	$error_msg = "Can't access without submiting a dream!";
 }
-
+// Ashwin Saxena wrote most of this file (interfacing with Parse back-end. Chris Lee fixed formatting and made it display an error message appropriately.
 ?>
 <!DOCTYPE html>
 <html lang="en">
