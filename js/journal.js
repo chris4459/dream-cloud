@@ -1,3 +1,5 @@
+// ***** Chris Lee *****
+
 var dream_liked = [false,false,false,false,false,false,false,false,false,false];
 
 function increment_likes(id, object_id){
