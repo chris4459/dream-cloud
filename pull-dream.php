@@ -1,3 +1,4 @@
+<!-- ***** Chris Lee ***** -->
 <?php 
 require 'vendor/autoload.php';
 use Parse\ParseClient; 
@@ -21,7 +22,7 @@ while ($not_found) {
     		array_push($dream_objectID_arr, $object->getObjectId());
     		echo '<h4 class="dream-name"><a href="view.php?id='.$object->getObjectId().'">'.$object->get('name').'&nbsp;&nbsp;';
             echo '<span class="glyphicon glyphicon-cloud" aria-hidden="true"></span>';
-            echo '</a></h4>';
+            echo '</h4></a>';
     		echo '<blockquote class="blockquote-reverse"><p class="dream-content">'.$object->get('dream').'</p>';
             echo '<footer><cite title="Dreamer">'.$object->get('name').'</cite></footer>';
             echo '</blockquote>';

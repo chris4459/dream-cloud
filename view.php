@@ -1,3 +1,5 @@
+<!-- ***** Chris Lee, Mitch Joa ***** -->
+
 <?php 
 require 'vendor/autoload.php';
 use Parse\ParseClient; 
@@ -81,7 +83,7 @@ if (count($results)) {
 	<div id="back">
 		<span class="glyphicon glyphicon-backward" onclick="goBack()"></span>
 	</div>
-	
+
 	<?php
 		include("footer.php");
 	?>
