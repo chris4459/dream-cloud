@@ -24,7 +24,7 @@
 ?>
 <div class="margin-top"></div>
         
-
+<!-- **** Jessi Beck - I wrote most of all below **** -->
 <div id = "top">
     <h2 id="title">Common Symbols</h2>
     <h3 id="desc">The following symbols are commonly used in dream interpretation.</h3>

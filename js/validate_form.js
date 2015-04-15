@@ -1,3 +1,5 @@
+// Ashwin Saxena and Chris Lee wrote this
+
 function validate_form(){
 
 	if( document.dreamform.age.value == "" ){
