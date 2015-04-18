@@ -96,6 +96,7 @@ $dream_objectID_arr = array();
 
     <div class="refresh">
       <span class="glyphicon glyphicon-refresh" onClick="window.location.reload()"></span>
+      <span class="sr-only" onClick="window.location.reload()"></span>
     </div>
 
 

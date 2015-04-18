@@ -69,7 +69,7 @@ if (count($results)) {
 			</span>
 			<span class="glyphicon glyphicon-option-vertical"></span>
 			<span>
-				<span class="glyphicon glyphicon-heart" id="heart-like" onclick= <?php echo "increment_likes(\"".$objectID."\");" ?>></span>
+				<span class="glyphicon glyphicon-heart" id="heart-like" onclick="increment_likes('<?php echo $objectID ?>')"></span>
 				<span id="dream_likes">
 				<?php echo $likes; ?>
 				</span>

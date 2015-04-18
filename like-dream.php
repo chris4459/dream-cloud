@@ -11,8 +11,8 @@
 	?>
 	<div class="like-dream-thumbs-up">
 		<span class="glyphicon glyphicon-option-vertical"></span>
-		<span class="glyphicon glyphicon-thumbs-up" id=<?php echo "thumbs_".$dream_id ?>
-				onclick= <?php echo "increment_likes($dream_id,\"".$dreamID."\");" ?>></span>
+		<span class="glyphicon glyphicon-thumbs-up" id="<?php echo "thumbs_".$dream_id ?>" onclick="increment_likes(<?php echo $dream_id ?>,'<?php echo $dreamID ?>')"></span>
+		<!-- <span class="glyphicon glyphicon-thumbs-up" id=<?php echo "thumbs_".$dream_id ?> onclick= <?php echo "increment_likes($dream_id,\"".$dreamID."\");" ?>></span> -->
 	</div>
 
 </div>
